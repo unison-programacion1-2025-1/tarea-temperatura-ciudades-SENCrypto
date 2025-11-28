@@ -26,6 +26,9 @@ temp = kelvin_to_celsius(df_celsius)
 # Analisis
 
 # TODO: Imprime que día y hora se registró la temperatura mínima en Phoenix con el siguiente mensaje: "El día con la temperatura mínima en Phoenix fue: {fecha}"
+df_celsius["Phoenix"]=df_celsius["Phoenix"].apply(kelvin_to_celsius)
+fecha_min = df_celsius["Phoenix"].idxmin()
+
 # TODO: Imprime la temperatura mínima en Phoenix con el siguiente mensaje: "La temperatura mínima registrada en Phoenix fue de: ", temperatura, " °C""
 
 # TODO: Imprime que día y hora se registró la temperatura máxima en Phoenix con el siguiente mensaje: "El día con la temperatura máxima en Phoenix fue: {fecha}"
