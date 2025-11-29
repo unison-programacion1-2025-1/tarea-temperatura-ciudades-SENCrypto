@@ -31,12 +31,13 @@ dia_min_phx = df_celsius["Phoenix"].idxmin()
 print(f"El día con la temperatura mínima en Phoenix fue: {dia_min_phx}")
 
 # TODO: Imprime la temperatura mínima en Phoenix con el siguiente mensaje: "La temperatura mínima registrada en Phoenix fue de: ", temperatura, " °C""
-df_celsius["dia_min_phx"]
+temp_c_min = df_celsius["Phoenix"].min().round(2)
+print(f"La temperatura mínima registrada en Phoenix fue de: {temp_c_min} °C")
 
 # TODO: Imprime que día y hora se registró la temperatura máxima en Phoenix con el siguiente mensaje: "El día con la temperatura máxima en Phoenix fue: {fecha}"
-df_celsius["Phoenix"]=df_celsius["Phoenix"].apply(kelvin_to_celsius)
-dia_max_phx = df_celsius["Phoenix"].idxmax()
-print(f"El día con la temperatura máxima en Phoenix fue: {dia_max_phx}")
+#df_celsius["Phoenix"]=df_celsius["Phoenix"].apply(kelvin_to_celsius)
+#dia_max_phx = df_celsius["Phoenix"].idxmax()
+#print(f"El día con la temperatura máxima en Phoenix fue: {dia_max_phx}")
 # TODO: Imprime la temperatura máxima en Phoenix con el siguiente mensaje: "La temperatura máxima registrada en Phoenix fue de: ", temperatura, " °C""
 temp_c_min = df_celsius["Phoenix"].min().round(2)
 print(f"La temperatura mínima registrada en Phoenix fue de: {temp_c_min} °C")
