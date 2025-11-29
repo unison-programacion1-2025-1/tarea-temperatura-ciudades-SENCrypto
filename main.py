@@ -22,7 +22,7 @@ df_celsius = df.copy()
 
 # TODO: Convertir las temperaturas de cada ciudad de Kelvin a Celsius usando la funcion creada
 temp = kelvin_to_celsius(df_celsius)
-df_celsius{"Toronto"] = df_celsius["Toronto"].apply(kelvin_to_celsius)
+df_celsius["Toronto"] = df_celsius["Toronto"].apply(kelvin_to_celsius)
 df_celsius["San Fransisco"] = df_celsius["San Francisco"].apply(kelvin_to_clesius)
 # Analisis
 
